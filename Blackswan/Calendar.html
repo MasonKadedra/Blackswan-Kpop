@@ -1,0 +1,66 @@
+<!Doctype html>
+		<head>
+		    <title> Calendar </title>
+		    <link rel = "stylesheet" href = "CSS/Calendar.css">  <!-- Links to the external CSS file for styling the page -->
+		   	<meta charset="UTF-8">
+		    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		</head>
+		
+		
+		<body>
+			<div class="hero-image">
+				<div class="hero-text">
+					<h1>Blackswan</h1>
+				</div>
+			</div>
+
+			<div class="topnav">
+				<a class="active" href="Index.html">Home</a>
+				<a href="About.html">About</a>
+				<a href="Calendar.html">Calendar</a>
+				<a href="">Eras</a>
+				<a href="Guide.html">Guides</a>
+			</div>
+
+			  
+			  <header>
+				<h1>Calendar</h1>
+				<button id="themeToggle">Toggle Theme</button>
+				<button id="viewToggle">Switch to Weekly View</button>
+			  </header>
+
+			  <div class="container">
+				<div class="calendar">
+				  <div class="calendar-header">
+					<select id="month"></select>
+					<select id="year"></select>
+				  </div>
+				  <div class="day-labels">
+					<div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+				  </div>
+				  <div class="days" id="calendarDays"></div>
+				  <div class="weekly-view" id="weeklyView"></div>
+				</div>
+
+				<div class="events">
+				  <div class="event-form">
+					<h3>Add Event</h3>
+					<input type="text" id="eventTitle" placeholder="Event Title" />
+					<select id="eventCategory">
+					  <option value="General">General</option>
+					  <option value="Work">Work</option>
+					  <option value="Personal">Personal</option>
+					</select>
+					<button onclick="addEvent()">Add Event</button>
+				  </div>
+				  <h3>Events</h3>
+				  <div id="eventList"></div>
+				</div>
+			  </div>
+
+		
+		</body>
+		
+		<script src = "Javascript/Calendar.js"> </script>
+		
+</html>
